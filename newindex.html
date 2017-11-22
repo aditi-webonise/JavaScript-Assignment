@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Storage types
+		</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<form>
+			<h1>ENTER THE KEY-VALUE PAIR</h1>
+            <br>
+			<div>
+            	<label for="key">KEY</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="key" type="text" required>
+				<br>
+				<br>
+				<label for="value">VALUE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<input id="value" type="text"  >
+			</div>
+            <div>
+            	<h3>Local Storage</h3>
+            	<button id="b1" onclick="setInLocal()">Set</button>
+				<button id="b2" onclick="getValueFromLocal()">Get</button >
+				<button id="b3" onclick="getAllFromLocal()">Get All</button>
+	            <button id="b4" onclick="clearLocal()">Clear</button>
+            </div>
+			<div>
+            	<h3>Session Storage</h3>
+            	<button id="b5" onclick="setInSession()">Set</button>
+				<button id="b6" onclick="getValueFromSession()">Get</button >
+				<button id="b7" onclick="getAllFromSession()">Get All</button>
+	            <button id="b8" onclick="clearSession()">Clear</button>
+            </div>
+            <div>
+            	<h3>Cookie Storage</h3>
+            	<button id="b9" >Set</button>
+            </div>
+		</form>
+	</body>
+	<script type="text/javascript" src="javascript.js">
+    </script>
+</html>
